@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(if \\(Test-Path \"$env:USERPROFILE\\\\.ssh\\\\id_rsa_marcan.pub\"\\) { Get-Content \"$env:USERPROFILE\\\\.ssh\\\\id_rsa_marcan.pub\" } else { \"NO_KEY\" })",
+      "PowerShell(git init)",
+      "PowerShell(git remote add origin https://github.com/jamsagak/marcan.git)",
+      "Bash(rsync -avz --progress -e 'ssh -i __TRACKED_VAR__/.ssh/id_rsa_marcan' newmarcancom@207.244.240.169:public_html/ /c/xampp/htdocs/marcan/ --exclude=.git)",
+      "PowerShell($local = \\(Get-ChildItem C:\\\\xampp\\\\htdocs\\\\marcan -Directory | Select-Object -ExpandProperty Name\\) -join \", \"; \"Local dirs: $local\")"
+    ]
+  }
+}

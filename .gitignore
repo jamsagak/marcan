@@ -1,0 +1,52 @@
+# WordPress core - usually not tracked, but we include it for full deploy
+# Uncomment below to exclude core:
+# /wp-admin/
+# /wp-includes/
+# /wp-*.php
+# /index.php
+# /license.txt
+# /readme.html
+# /xmlrpc.php
+
+# Sensitive files
+wp-config.php
+.htaccess
+.user.ini
+php.ini
+
+# Uploads (too heavy for git)
+wp-content/uploads/
+
+# Cache and backup
+wp-content/cache/
+wp-content/upgrade/
+wp-content/backup*/
+wp-content/backups/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node
+node_modules/
+
+# Logs
+*.log
+error_log
+debug.log
+
+# Backup plugin
+wp-content/plugins/backup/
+
+# cgi-bin
+cgi-bin/
+
+# well-known
+.well-known/
