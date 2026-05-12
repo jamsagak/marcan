@@ -1,5 +1,5 @@
 <?php
-// Marcan Auto-Deploy v1.0
+// Marcan Auto-Deploy v1.1
 
 $secret = 'marcan_deploy_2026_secret_key';
 
